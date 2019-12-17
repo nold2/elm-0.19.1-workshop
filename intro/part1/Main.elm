@@ -7,8 +7,8 @@ import Html.Attributes exposing (..)
 banner =
     div [ class "banner" ]
         [ div [ class "container" ]
-            [ h1 [] [text "Conduit"]
-            , p [] [text "A place to share your knowledge."]
+            [ h1 [ class "logo-font" ] [ text "Conduit" ]
+            , p [] [ text "A place to share your knowledge." ]
             ]
         ]
 
@@ -19,7 +19,7 @@ feed =
 
 main =
     div [ class "home-page" ]
-        [ div [] [ banner ]
+        [ banner
         , div [ class "container page" ]
             [ div [ class "row" ]
                 [ div [ class "col-md-9" ] [ feed ]
